@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerPetshopView{
+    width: 100%;
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchShopContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerSearch{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchItem{
+    width: 80%;
+    max-width: 500px;
+    height: 2.5rem; 
+    padding-left: 10px;
+    border-style: none;
+    outline: none;
+    border: solid 1px rgb(223, 220, 220);
+}
+
+.resultSearch{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemsShopContainer{
+    width: 70%;
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-left: solid 1px grey;
+}
+
+.itemShop{
+    width: 210px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: white;
+    border: solid 1px rgb(223, 220, 220);
+}
+
+.infoItemShop{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #717070;
+}

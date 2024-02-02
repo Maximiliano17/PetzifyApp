@@ -1,0 +1,207 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.headerContainer{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.logoContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.containerSearch{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSearch input{
+    width: 80%;
+    height: 3rem;
+    outline: none;
+    border: solid 1px rgb(223, 220, 220);
+    background: white;
+    padding-left: 10px;
+}
+
+.btnSearch{
+    width: 20%;
+    height: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background: #0077B5;
+    color: white;
+}
+
+.containerNav{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: dashed 1px grey;
+}
+
+.containerNav ul{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.routeNavItem{
+    width: 100px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    color: #717070;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.routeNavItem:hover{
+    color: green;
+    transition: 500ms;
+}
+
+.containerNav li{
+    width: 100px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    color: #717070;
+    transition: 500ms;
+}
+
+.containerNav li:hover{
+    color: green;
+    transition: 500ms;
+}
+
+.btnBurger{
+    display: none;
+}
+
+.logoRes{
+    display: none;
+}
+
+@media(max-width: 1300px){
+    .containerNav{
+        display: none;
+    }
+
+    .containerSearch{
+        width: 70%;
+    }
+
+    .btnBurger{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnBurger button{
+        background: none;
+        border-style: none;
+    }
+
+    .botonmodal_res{
+        background: none;
+        border-style: none;
+    }
+
+    .modal{
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        border:1px solid #ccc;
+        box-shadow: 0px 0px 3px 1px #002858;
+    }
+
+    .logoContainer{
+        display: none;
+    }
+
+    .logoRes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerNavRes{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerNavRes ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .containerNavRes li{
+        width: 100%;
+        height: 100px;
+        padding-left: 20px;
+        font-size: 25px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .headerModal{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+}
