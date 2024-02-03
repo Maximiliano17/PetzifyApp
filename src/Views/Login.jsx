@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../Modules/Login.module.css";
 import logoPetzifyFormLogin from "../assets/Logos/logoPetzify.png";
+import { authApi } from "../ApíConexion/auth";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -10,41 +11,24 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const body = JSON.stringify({
-      username,
-      password
-    });
-
     try {
-      const response = await fetch("http://localhost:5000/api/v1/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: body
+      const response = await authApi.post("/signin", {
+        username,
+        password,
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to login");
-      }
-
-      console.log("Login successful");
-
-      // Redirigir al usuario después del inicio de sesión exitoso
-       //window.location.href = "/Home"; 
-
+      let convert = JSON.stringify(response.data.user);
+      localStorage.setItem("account", convert);
+      window.location.href = "/Home";
     } catch (error) {
-      console.error("Error logging in:", error);
-      alert("Error al iniciar sesión. Por favor, verifique sus credenciales.");
+      alert(error);
     }
   };
 
   return (
     <>
       <div className={styles.containerLoginView}>
-        <div className={styles.containerBannerLogin}>
-          {/* Banner Imagen */}
-        </div>
+        <div className={styles.containerBannerLogin}>{/* Banner Imagen */}</div>
         <div className={styles.containerFormLogin}>
           <form onSubmit={handleLogin} className={styles.loginForm}>
             <section className={styles.submitFormLogin}>

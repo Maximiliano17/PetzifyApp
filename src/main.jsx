@@ -1,57 +1,33 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import App from './App.jsx'
-import Home from './Views/Home.jsx';
-import Login from './Views/Login.jsx';
-import Register from './Views/Register.jsx';
-import Profile from './Views/Profile.jsx';
-import Petshop from './Views/Petshop.jsx';
-import Conexion from './ApíConexion/Conexion.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App.jsx";
+import Home from "./Views/Home.jsx";
+import Login from "./Views/Login.jsx";
+import Register from "./Views/Register.jsx";
+import Profile from "./Views/Profile.jsx";
 
 //Routes
-const router = createBrowserRouter([ 
+const router = createBrowserRouter([
   {
     path: "/",
-    element:(
-      <App/>
-    ),
+    element: <App />,
   },
   {
-    path:"/Login",
-    element:(
-       <Login />
-    ),
+    path: "/Login",
+    element: <Login />,
   },
   {
-    path:"/Register",
-    element:(
-       <Register />
-    ),
+    path: "/Register",
+    element: <Register />,
   },
   {
-    path:"/Home",
-    element:(
-       <Home />
-    ),
+    path: "/Home",
+    element: <Home />,
   },
   {
-    path:"/Profile",
-    element:(
-      <Profile />
-    ),
-  },
-  {
-    path:"/Petshop",
-    element:(
-      <Petshop />
-    ),
-  },
-  {
-    path:"/Conexion",
-    element:(
-      <Conexion />
-    ),
+    path: "/Profile",
+    element: <Profile />,
   },
 ]);
 
@@ -60,4 +36,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-

@@ -6,7 +6,7 @@ import Maximiliano from "../assets/Profiles/MaximilianoDosSantos.png"
 import JuamPablo from "../assets/Profiles/JuamPabloVillalba.png"
 
 function Founders(){
-    return(
+    return( 
         <>
          <div className={styles.containerFounders}>
           <img src={fotoFounders} alt="Foto Founders" className={styles.fotoFounders}/>  
@@ -19,7 +19,7 @@ function Founders(){
             <div className={styles.btns}>
             <p>Ve Mi Perfil 🤓</p>
             <button>
-             ¡Ve Mis Redes!
+             <a target="_black" href="https://www.linkedin.com/in/maximilianodossantos/">¡Ve Mis Redes!</a>
             </button>
             </div>
             </article>
@@ -28,7 +28,7 @@ function Founders(){
             <div className={styles.btns}>
             <p>Ve Mi Perfil 😲</p>
             <button>
-             ¡Ve Mis Redes!
+             <a target="_black" href="https://www.linkedin.com/in/juanpablovillalba/">¡Ve Mis Redes!</a>
             </button>
             </div>
             </article>

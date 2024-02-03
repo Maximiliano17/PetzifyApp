@@ -74,7 +74,7 @@
     height: 120px;
     max-height: 150px;
     border-radius: 100px;
-    box-shadow: 0px 0px 0px 2px #0077B5;
+    box-shadow: 0px 0px 0px 3px #7ED957;
     background-image: green;
 }
 
@@ -83,9 +83,19 @@
     height: 2.5rem;
     border-radius: 100px;
     border-style: none;
-    background: #0077B5;
-    color: white;
+    background: #7ED957;
+    transition: 100ms;
     cursor: pointer;
+}
+
+.profileMaxi button:hover{
+    transition: 100ms;
+    background: #399a10;
+}
+
+.profileMaxi a{
+    text-decoration: none;
+    color: white;
 }
 
 /*Profile Juan*/
@@ -105,7 +115,7 @@
     height: 120px;
     max-height: 150px;
     border-radius: 100px;
-    box-shadow: 0px 0px 0px 2px #0077B5;
+    box-shadow: 0px 0px 0px 3px #7ED957;
     background-image: green;
 }
 
@@ -114,9 +124,20 @@
     height: 2.5rem;
     border-radius: 100px;
     border-style: none;
-    background: #0077B5;
+    background: #7ED957;
+    transition: 100ms;
     color: white;
     cursor: pointer;
+}
+
+.profileJuan button:hover{
+    transition: 100ms;
+    background: #399a10;
+}
+
+.profileJuan a{
+    text-decoration: none;
+    color: white;
 }
 
 @media(max-width: 1700px){   

@@ -1,34 +1,32 @@
 //Styles
-import styles from "../Modules/Home.module.css"
+import styles from "../Modules/Home.module.css";
 //Components
-import Founders from "../Components/Founders"
-import Header from "../Components/Header"
-import ProfilePersonalMin from "../Components/ProfilePersonalMin"
+import Founders from "../Components/Founders";
+import Header from "../Components/Header";
+import ProfilePersonalMin from "../Components/ProfilePersonalMin";
+//import { useEffect, useState } from "react";
 //import PostForm from "../Components/PostForm"
 
 function Home() {
 
-    return (
-      <>
-     {/*Header*/}
+  return (
+    <>
+      {/*Header*/}
       <Header />
-       <div className={styles.containerHome}>
-         {/*containerProfile*/}
-         <article className={styles.containerProfile}>
+      <div className={styles.containerHome}>
+        {/*containerProfile*/}
+        <article className={styles.containerProfile}>
           <ProfilePersonalMin />
-         </article>
-          {/*containerPost*/}
-         <section className={styles.containerPost}>
-          { /*<PostForm /> */ }
-         </section> 
-          {/*containerFounders*/}
-         <article className={styles.containerFounders}>
+        </article>
+        {/*containerPost*/}
+        <section className={styles.containerPost}>{/*<PostForm /> */}</section>
+        {/*containerFounders*/}
+        <article className={styles.containerFounders}>
           <Founders />
-         </article>
-       </div>
-      </>
-    )
-  }
-  
-  export default Home
-  
+        </article>
+      </div>
+    </>
+  );
+}
+
+export default Home;
